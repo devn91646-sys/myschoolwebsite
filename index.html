@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sandipani School Shahdol</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123c69, #1d70a2);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #092c4c;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #123c69;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ffd166;
+            color: #123c69;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #1d70a2;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .notice {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .contact-box {
+            background: #123c69;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        footer {
+            background: #092c4c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer span {
+            color: #ffd166;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Sandipani School</h1>
+        <p>Shahdol, Madhya Pradesh</p>
+        <p>Learning • Discipline • Excellence</p>
+
+        <a href="#about" class="hero-button">Explore Our School</a>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#academics">Academics</a>
+        <a href="#notices">Notices</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Our School</h2>
+
+        <div class="about">
+            <p>
+                Welcome to the official student-created website of
+                <strong>Sandipani School, Shahdol</strong>.
+            </p>
+
+            <br>
+
+            <p>
+                This website provides useful information about our school,
+                academics, facilities, activities and important notices.
+            </p>
+
+            <br>
+
+            <p>
+                Our aim is to provide students with a positive learning
+                environment and opportunities to develop knowledge, skills,
+                confidence and good values.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FACILITIES -->
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📚 Library</h3>
+                <p>
+                    A place where students can read, learn and explore
+                    different subjects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔬 Science Labs</h3>
+                <p>
+                    Practical learning facilities for science subjects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Computer Lab</h3>
+                <p>
+                    Students can develop computer and digital skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚽ Sports</h3>
+                <p>
+                    Sports and physical activities help students stay active
+                    and healthy.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ACADEMICS -->
+    <section id="academics">
+        <h2>Academics</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📖 Classes</h3>
+                <p>
+                    Add the classes offered by your school here.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📝 Examinations</h3>
+                <p>
+                    Add information about examinations, tests and results.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Activities</h3>
+                <p>
+                    Add information about cultural, educational and
+                    extracurricular activities.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- NOTICES -->
+    <section id="notices">
+        <h2>School Notices</h2>
+
+        <div class="notice">
+            <strong>📢 Notice 1</strong>
+            <p>Add your latest school announcement here.</p>
+        </div>
+
+        <div class="notice">
+            <strong>📢 Notice 2</strong>
+            <p>Add examination, holiday or event information here.</p>
+        </div>
+
+        <div class="notice">
+            <strong>📢 Notice 3</strong>
+            <p>Add other important information here.</p>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <h3>Sandipani School</h3>
+
+            <p>📍 Shahdol, Madhya Pradesh</p>
+
+            <!-- Replace these with official information -->
+            <p>📞 Phone: Add official school phone number</p>
+            <p>✉️ Email: Add official school email</p>
+            <p>🌐 Website: Add official school website</p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Sandipani School, Shahdol
+        </p>
+
+        <p>
+            Website created by <span>Dev Nayak</span>
+        </p>
+    </footer>
+
+</body>
+</html>
+```
